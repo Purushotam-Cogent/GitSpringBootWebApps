@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8080
-ADD /home/porus/git/GitSpringBootWebApps/GitSpringBootWebApps/target/docker-springboot-intregate.jar docker-springboot-intregate.jar
+ADD target/docker-springboot-intregate.jar docker-springboot-intregate.jar
 ENTRYPOINT ["java","-jar","docker-springboot-intregate.jar"]
